@@ -1833,8 +1833,8 @@
 		(uuid "1e2fb912-c7a2-4cda-a7e7-a36839ff65d8")
 	)
 	(no_connect
-		(at 115.57 83.82)
-		(uuid "b1578d2a-41ff-4348-9918-e73305208ae5")
+		(at 115.57 76.2)
+		(uuid "8dc3a58e-ff80-46aa-a8f5-f248f9f0e88d")
 	)
 	(no_connect
 		(at 115.57 99.06)
@@ -1974,7 +1974,7 @@
 	)
 	(global_label "Power"
 		(shape input)
-		(at 115.57 76.2 0)
+		(at 115.57 83.82 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1984,7 +1984,7 @@
 		)
 		(uuid "19dc69d9-2c18-4eb9-8ff1-c12289d92dd5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.1795 76.2 0)
+			(at 124.1795 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
