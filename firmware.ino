@@ -14,70 +14,66 @@ const int IO3 = D10;
 const int IO4 = D9;
 
 // Microcontroller mode status.
-bool ControlIO2 = false;
-bool ControlIO3 = false;
-bool ControlIO4 = false;
+bool GPIOControl = false;
 
 void setup() {
+    Serial.begin(9600);
+    Serial.println("Macro Microcontroller Firmware V1.0.3.\nPress and hold any key until LEDs light up to enable GPIO control or do nothing to run user program.");
     pinMode(LED1, OUTPUT);
     pinMode(LED2, OUTPUT);
     pinMode(LED3, OUTPUT);
     pinMode(S1, INPUT);
     pinMode(S2, INPUT);
     pinMode(S3, INPUT);
+    userInit();
 }
 
 void loop() {
     // Statements to enable GPIO control mode if a key is pressed for more than 3 seconds.
-    if (digitalRead(S1) == HIGH && ControlIO2 == false) {
-        delay(3000);
-        if (digitalRead(S1) == HIGH) {
-            ControlIO2 = true;
+    if ((digitalRead(S1) == HIGH || digitalRead(S2) == HIGH || digitalRead(S3) == HIGH) && GPIOControl == false) {
+    delay(3000);
+        if (digitalRead(S1) == HIGH || digitalRead(S2) == HIGH || digitalRead(S3) == HIGH) {
+            GPIOControl = true;
+            Serial.println("GPIO control mode enabled.");
             digitalWrite(LED1, HIGH);
-            delay(1000);
-            digitalWrite(LED3, LOW);
-        }
-
-    } else if (digitalRead(S2) == HIGH && ControlIO3 == false) {
-        delay(3000);
-        if (digitalRead(S2) == HIGH) {
-            ControlIO3 = true;
             digitalWrite(LED2, HIGH);
-            delay(1000);
-            digitalWrite(LED3, LOW);
-        }
-
-    } else if (digitalRead(S3) == HIGH && ControlIO4 == false) {
-        delay(3000);
-        if (digitalRead(S3) == HIGH) {
-            ControlIO4 = true;
             digitalWrite(LED3, HIGH);
             delay(1000);
+            digitalWrite(LED1, LOW);
+            digitalWrite(LED2, LOW);
             digitalWrite(LED3, LOW);
         }
     }
-    buttonControlIO();
-    userProgram();
+    if (GPIOControl == true) {
+        pinMode(IO2, OUTPUT);
+        pinMode(IO3, OUTPUT);
+        pinMode(IO4, OUTPUT);
+        keyGPIOControl();
+    } else {
+        Serial.println("Running user program...");
+        userLoop();
+    }
 }
 
 // Function for controlling GPIO pins with buttons.
-void buttonControlIO() {
-    if (digitalRead(S1) == HIGH && ControlIO2 == true) {
-        pinMode(IO2, OUTPUT);
+void keyGPIOControl() {
+    if (digitalRead(S1) == HIGH) {
         digitalWrite(IO2, HIGH);
 
-    } else if (digitalRead(S2) == HIGH && ControlIO3 == true) {
-        pinMode(IO3, OUTPUT);
+    } else if (digitalRead(S2) == HIGH) {
         digitalWrite(IO3, HIGH);
 
-    } else if (digitalRead(S3) == HIGH && ControlIO4 == true) {
-        pinMode(IO4, OUTPUT);
+    } else if (digitalRead(S3) == HIGH) {
         digitalWrite(IO4, HIGH);
     }
 }
 
 // Users add their program here.
-void userProgram() {
+void userInit() {
+
+}
+
+void userLoop() {
     // Sample program.
     pinMode(IO2, OUTPUT);
     delay(500);
