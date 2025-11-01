@@ -50,7 +50,7 @@ void loop() {
         pinMode(IO4, OUTPUT);
         keyGPIOControl();
     } else {
-        Serial.println("Running user program...");
+        Serial.println("Running user program... You can enable GPIO control at the next loop.");
         userLoop();
     }
 }
