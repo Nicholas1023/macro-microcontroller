@@ -25,7 +25,10 @@ void setup() {
     pinMode(S1, INPUT);
     pinMode(S2, INPUT);
     pinMode(S3, INPUT);
-    userInit();
+    pinMode(IO2, OUTPUT);
+    pinMode(IO3, OUTPUT);
+    pinMode(IO4, OUTPUT);
+    userPins();
 }
 
 void loop() {
@@ -45,9 +48,6 @@ void loop() {
         }
     }
     if (GPIOControl == true) {
-        pinMode(IO2, OUTPUT);
-        pinMode(IO3, OUTPUT);
-        pinMode(IO4, OUTPUT);
         keyGPIOControl();
     } else {
         Serial.println("Running user program... You can enable GPIO control at the next loop.");
@@ -68,14 +68,13 @@ void keyGPIOControl() {
     }
 }
 
-// Users add their program here.
-void userInit() {
-
+// Functions for users to add their program.
+void userPins() {
+    // Change pinMode() in here if needed.
 }
 
 void userLoop() {
     // Sample program.
-    pinMode(IO2, OUTPUT);
     delay(500);
     digitalWrite(IO2, HIGH);
     delay(500);
