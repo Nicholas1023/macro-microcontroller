@@ -1,7 +1,7 @@
 // Onboard LEDs.
-const int LED1 = D0;
-const int LED2 = D1;
-const int LED3 = D2;
+const int L1 = D0;
+const int L2 = D1;
+const int L3 = D2;
 
 // Onboard buttons.
 const int S1 = D3;
@@ -18,10 +18,10 @@ bool GPIOControl = false;
 
 void setup() {
     Serial.begin(9600);
-    Serial.println("Macro Microcontroller Firmware V1.0.3.\nPress and hold any key until LEDs light up to enable GPIO control or do nothing to run user program.");
-    pinMode(LED1, OUTPUT);
-    pinMode(LED2, OUTPUT);
-    pinMode(LED3, OUTPUT);
+    Serial.println("Macro Microcontroller Firmware V1.0.4.\nPress and hold any key until LEDs light up to enable GPIO control or do nothing to run user program.");
+    pinMode(L1, OUTPUT);
+    pinMode(L2, OUTPUT);
+    pinMode(L3, OUTPUT);
     pinMode(S1, INPUT);
     pinMode(S2, INPUT);
     pinMode(S3, INPUT);
@@ -34,17 +34,18 @@ void setup() {
 void loop() {
     // Statements to enable GPIO control mode if a key is pressed for more than 3 seconds.
     if ((digitalRead(S1) == HIGH || digitalRead(S2) == HIGH || digitalRead(S3) == HIGH) && GPIOControl == false) {
-    delay(3000);
+        Serial.println("Keypress detected. Hold for 3 seconds to enable GPIO control.");
+        delay(3000);
         if (digitalRead(S1) == HIGH || digitalRead(S2) == HIGH || digitalRead(S3) == HIGH) {
             GPIOControl = true;
             Serial.println("GPIO control mode enabled.");
-            digitalWrite(LED1, HIGH);
-            digitalWrite(LED2, HIGH);
-            digitalWrite(LED3, HIGH);
+            digitalWrite(L1, HIGH);
+            digitalWrite(L2, HIGH);
+            digitalWrite(L3, HIGH);
             delay(1000);
-            digitalWrite(LED1, LOW);
-            digitalWrite(LED2, LOW);
-            digitalWrite(LED3, LOW);
+            digitalWrite(L1, LOW);
+            digitalWrite(L2, LOW);
+            digitalWrite(L3, LOW);
         }
     }
     if (GPIOControl == true) {
