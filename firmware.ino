@@ -16,9 +16,12 @@ const int IO4 = D9;
 // Microcontroller mode status.
 bool GPIOControl = false;
 
+// Print default mode prompt.
+bool defaultEnable = true;
+
 void setup() {
     Serial.begin(9600);
-    Serial.println("Macro Microcontroller Firmware V1.0.4.\nPress and hold any key until LEDs light up to enable GPIO control or do nothing to run user program.");
+    Serial.println("Macro Microcontroller Firmware V1.0.5.\nPress and hold any key until LEDs light up to enable GPIO control or do nothing to run user program.");
     pinMode(L1, OUTPUT);
     pinMode(L2, OUTPUT);
     pinMode(L3, OUTPUT);
@@ -35,6 +38,7 @@ void loop() {
     // Statements to enable GPIO control mode if a key is pressed for more than 3 seconds.
     if ((digitalRead(S1) == HIGH || digitalRead(S2) == HIGH || digitalRead(S3) == HIGH) && GPIOControl == false) {
         Serial.println("Keypress detected. Hold for 3 seconds to enable GPIO control.");
+        defaultEnable = true;
         delay(3000);
         if (digitalRead(S1) == HIGH || digitalRead(S2) == HIGH || digitalRead(S3) == HIGH) {
             GPIOControl = true;
@@ -51,7 +55,10 @@ void loop() {
     if (GPIOControl == true) {
         keyGPIOControl();
     } else {
-        Serial.println("Running user program... You can enable GPIO control at the next loop.");
+        if (defaultEnable == true) {
+            Serial.println("Running user program... You can enable GPIO control at the next loop.");
+            defaultEnable = false;
+        }
         userLoop();
     }
 }
