@@ -21,7 +21,7 @@ bool defaultEnable = true;
 
 void setup() {
     Serial.begin(9600);
-    Serial.println("Macro Microcontroller Firmware V1.0.5.\nPress and hold any key until LEDs light up to enable GPIO control or do nothing to run user program.");
+    Serial.println("Macro Microcontroller Firmware V1.0.6.\nPress and hold any key until LEDs light up to enable GPIO control or do nothing to run user program.");
     pinMode(L1, OUTPUT);
     pinMode(L2, OUTPUT);
     pinMode(L3, OUTPUT);
@@ -66,13 +66,29 @@ void loop() {
 // Function for controlling GPIO pins with buttons.
 void keyGPIOControl() {
     if (digitalRead(S1) == HIGH) {
-        digitalWrite(IO2, HIGH);
-
+        while (true) {
+            digitalWrite(IO2, HIGH);
+            if (digitalRead(S1) == LOW) {
+                digitalWrite(IO2, LOW);
+                break;
+            }
+        }
     } else if (digitalRead(S2) == HIGH) {
-        digitalWrite(IO3, HIGH);
-
+        while (true) {
+            digitalWrite(IO3, HIGH);
+            if (digitalRead(S2) == LOW) {
+                digitalWrite(IO3, LOW);
+                break;
+            }
+        }
     } else if (digitalRead(S3) == HIGH) {
-        digitalWrite(IO4, HIGH);
+        while (true) {
+            digitalWrite(IO4, HIGH);
+            if (digitalRead(S3) == LOW) {
+                digitalWrite(IO4, LOW);
+                break;
+            }
+        }
     }
 }
 
