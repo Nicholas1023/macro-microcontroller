@@ -102,5 +102,5 @@ void userLoop() {
     delay(500);
     digitalWrite(IO2, HIGH);
     delay(500);
-    pinMode(IO2, LOW);
+    digitalWrite(IO2, LOW);
 }
