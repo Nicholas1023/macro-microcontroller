@@ -4468,7 +4468,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "S1/IO2"
+	(gr_text "SW1/IO2"
 		(at 132.08 69.342 0)
 		(layer "F.SilkS")
 		(uuid "25c3963f-93fd-4ec6-b123-663adf047d2b")
@@ -4494,7 +4494,7 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "Key S3"
+	(gr_text "Key SW3"
 		(at 159.512 109.728 0)
 		(layer "F.SilkS")
 		(uuid "30d5037b-9d4a-4a7a-90f5-b3cd3c0ec242")
@@ -4520,7 +4520,7 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "S2"
+	(gr_text "2"
 		(at 133.096 83.058 0)
 		(layer "F.SilkS")
 		(uuid "37b1cfcc-ec1c-4b3f-9cc3-0754cc021a18")
@@ -4533,7 +4533,7 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "S1"
+	(gr_text "SW1"
 		(at 130.556 83.058 0)
 		(layer "F.SilkS")
 		(uuid "385cda68-4fa2-4c31-9100-087793a5e557")
@@ -4637,7 +4637,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Key S1"
+	(gr_text "Key SW1"
 		(at 116.84 109.728 0)
 		(layer "F.SilkS")
 		(uuid "85c8d6b5-ef7c-409d-96de-f58f2b958204")
@@ -4663,7 +4663,7 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "S2/IO3"
+	(gr_text "SW2/IO3"
 		(at 139.954 69.342 0)
 		(layer "F.SilkS")
 		(uuid "a9de71ef-38f1-474b-8c63-cdb2e997bfd8")
@@ -4689,7 +4689,7 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "Key S2"
+	(gr_text "Key SW2"
 		(at 138.176 109.728 0)
 		(layer "F.SilkS")
 		(uuid "c346a320-bf79-4883-9855-fd47e573d2ac")
@@ -4702,7 +4702,7 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "S3\n"
+	(gr_text "3\n"
 		(at 135.636 83.058 0)
 		(layer "F.SilkS")
 		(uuid "ca507d42-6c2b-407b-a9ca-e4f3a4f522e7")
@@ -4728,7 +4728,7 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "S3/IO4"
+	(gr_text "SW3/IO4"
 		(at 147.828 69.342 0)
 		(layer "F.SilkS")
 		(uuid "d4403a50-d1dd-4c8c-89d7-3f2bc831bbce")

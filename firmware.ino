@@ -4,9 +4,9 @@ const int L2 = D1;
 const int L3 = D2;
 
 // Onboard buttons.
-const int S1 = D3;
-const int S2 = D4;
-const int S3 = D5;
+const int SW1 = D3;
+const int SW2 = D4;
+const int SW3 = D5;
 
 // GPIO pins 2-4.
 const int IO2 = D8;
@@ -25,9 +25,9 @@ void setup() {
     pinMode(L1, OUTPUT);
     pinMode(L2, OUTPUT);
     pinMode(L3, OUTPUT);
-    pinMode(S1, INPUT);
-    pinMode(S2, INPUT);
-    pinMode(S3, INPUT);
+    pinMode(SW1, INPUT);
+    pinMode(SW2, INPUT);
+    pinMode(SW3, INPUT);
     pinMode(IO2, OUTPUT);
     pinMode(IO3, OUTPUT);
     pinMode(IO4, OUTPUT);
@@ -36,11 +36,11 @@ void setup() {
 
 void loop() {
     // Statements to enable GPIO control mode if a key is pressed for more than 3 seconds.
-    if ((digitalRead(S1) == HIGH || digitalRead(S2) == HIGH || digitalRead(S3) == HIGH) && GPIOControl == false) {
+    if ((digitalRead(SW1) == HIGH || digitalRead(SW2) == HIGH || digitalRead(SW3) == HIGH) && GPIOControl == false) {
         Serial.println("Keypress detected. Hold for 3 seconds to enable GPIO control.");
         defaultEnable = true;
         delay(3000);
-        if (digitalRead(S1) == HIGH || digitalRead(S2) == HIGH || digitalRead(S3) == HIGH) {
+        if (digitalRead(SW1) == HIGH || digitalRead(SW2) == HIGH || digitalRead(SW3) == HIGH) {
             GPIOControl = true;
             Serial.println("GPIO control mode enabled.");
             digitalWrite(L1, HIGH);
@@ -65,26 +65,26 @@ void loop() {
 
 // Function for controlling GPIO pins with buttons.
 void keyGPIOControl() {
-    if (digitalRead(S1) == HIGH) {
+    if (digitalRead(SW1) == HIGH) {
         while (true) {
             digitalWrite(IO2, HIGH);
-            if (digitalRead(S1) == LOW) {
+            if (digitalRead(SW1) == LOW) {
                 digitalWrite(IO2, LOW);
                 break;
             }
         }
-    } else if (digitalRead(S2) == HIGH) {
+    } else if (digitalRead(SW2) == HIGH) {
         while (true) {
             digitalWrite(IO3, HIGH);
-            if (digitalRead(S2) == LOW) {
+            if (digitalRead(SW2) == LOW) {
                 digitalWrite(IO3, LOW);
                 break;
             }
         }
-    } else if (digitalRead(S3) == HIGH) {
+    } else if (digitalRead(SW3) == HIGH) {
         while (true) {
             digitalWrite(IO4, HIGH);
-            if (digitalRead(S3) == LOW) {
+            if (digitalRead(SW3) == LOW) {
                 digitalWrite(IO4, LOW);
                 break;
             }
