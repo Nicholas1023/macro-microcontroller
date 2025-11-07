@@ -4337,7 +4337,7 @@
 		(uuid "2db177a4-5a21-4593-ba68-d529cef5bc71")
 	)
 	(gr_rect
-		(start 128.778 81.788)
+		(start 128.016 81.788)
 		(end 146.304 87.884)
 		(stroke
 			(width 0.1)
