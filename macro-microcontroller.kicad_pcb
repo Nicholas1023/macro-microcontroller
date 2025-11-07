@@ -4337,7 +4337,7 @@
 		(uuid "2db177a4-5a21-4593-ba68-d529cef5bc71")
 	)
 	(gr_rect
-		(start 128.016 81.788)
+		(start 128.016 82.296)
 		(end 146.304 87.884)
 		(stroke
 			(width 0.1)
@@ -4520,32 +4520,6 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "2"
-		(at 133.096 83.058 0)
-		(layer "F.SilkS")
-		(uuid "37b1cfcc-ec1c-4b3f-9cc3-0754cc021a18")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.16)
-				(bold yes)
-			)
-			(justify bottom)
-		)
-	)
-	(gr_text "SW1"
-		(at 130.556 83.058 0)
-		(layer "F.SilkS")
-		(uuid "385cda68-4fa2-4c31-9100-087793a5e557")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.16)
-				(bold yes)
-			)
-			(justify bottom)
-		)
-	)
 	(gr_text "Press & hold any key until LEDs light up to enable GPIO control."
 		(at 107.188 89.789 0)
 		(layer "F.SilkS")
@@ -4586,7 +4560,7 @@
 		)
 	)
 	(gr_text "GPIO Pins"
-		(at 127.762 81.153 0)
+		(at 127.762 81.661 0)
 		(layer "F.SilkS")
 		(uuid "6b5d28b2-7914-4b54-8567-5b83cf2aa75c")
 		(effects
@@ -4697,19 +4671,6 @@
 			(font
 				(size 1 1)
 				(thickness 0.2)
-				(bold yes)
-			)
-			(justify bottom)
-		)
-	)
-	(gr_text "3\n"
-		(at 135.636 83.058 0)
-		(layer "F.SilkS")
-		(uuid "ca507d42-6c2b-407b-a9ca-e4f3a4f522e7")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.16)
 				(bold yes)
 			)
 			(justify bottom)
