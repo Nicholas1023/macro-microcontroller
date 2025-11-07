@@ -4349,7 +4349,7 @@
 	)
 	(gr_rect
 		(start 128.27 67.945)
-		(end 159.512 76.581)
+		(end 159.512 76.327)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -4586,7 +4586,7 @@
 		)
 	)
 	(gr_text "GPIO Pins"
-		(at 128.651 81.153 0)
+		(at 127.762 81.153 0)
 		(layer "F.SilkS")
 		(uuid "6b5d28b2-7914-4b54-8567-5b83cf2aa75c")
 		(effects
