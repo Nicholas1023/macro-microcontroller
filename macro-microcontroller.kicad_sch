@@ -2129,7 +2129,7 @@
 		(at 153.67 101.6)
 		(uuid "f4218762-ea69-4dcc-990a-dfa7f7dbedd7")
 	)
-	(global_label "S1"
+	(global_label "SW1"
 		(shape input)
 		(at 90.17 53.34 180)
 		(fields_autoplaced yes)
@@ -2141,7 +2141,7 @@
 		)
 		(uuid "01a8fe86-0247-4405-a60b-f152e30e0d52")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.7658 53.34 0)
+			(at 83.3144 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2151,7 +2151,7 @@
 			)
 		)
 	)
-	(global_label "S2"
+	(global_label "SW2"
 		(shape input)
 		(at 118.11 93.98 180)
 		(fields_autoplaced yes)
@@ -2163,7 +2163,7 @@
 		)
 		(uuid "01c623a6-d840-4a63-bb1e-3d3eabeef1d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.7058 93.98 0)
+			(at 111.2544 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2173,7 +2173,7 @@
 			)
 		)
 	)
-	(global_label "S1"
+	(global_label "SW1"
 		(shape input)
 		(at 118.11 90.17 180)
 		(fields_autoplaced yes)
@@ -2185,7 +2185,7 @@
 		)
 		(uuid "04672682-b481-419a-9f1b-74ec4b422b4a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.7058 90.17 0)
+			(at 111.2544 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2283,9 +2283,9 @@
 			)
 		)
 	)
-	(global_label "S3"
+	(global_label "SW3"
 		(shape input)
-		(at 125.73 53.34 180)
+		(at 128.27 53.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2295,7 +2295,7 @@
 		)
 		(uuid "1c350e5a-3f2f-4894-9e7e-2ca1e5aa20b6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.3258 53.34 0)
+			(at 121.4144 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2349,9 +2349,9 @@
 			)
 		)
 	)
-	(global_label "S2"
+	(global_label "SW2"
 		(shape input)
-		(at 107.95 53.34 180)
+		(at 109.22 53.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2361,7 +2361,7 @@
 		)
 		(uuid "5fc00110-ca0c-4291-b735-e1cf91f77a6a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.5458 53.34 0)
+			(at 102.3644 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2393,7 +2393,7 @@
 			)
 		)
 	)
-	(global_label "S3"
+	(global_label "SW3"
 		(shape input)
 		(at 118.11 97.79 180)
 		(fields_autoplaced yes)
@@ -2405,7 +2405,7 @@
 		)
 		(uuid "6e968fd3-1ac5-471b-a3e4-d3eff00da8ad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.7058 97.79 0)
+			(at 111.2544 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2938,7 +2938,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 130.81 53.34 0)
+		(at 133.35 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2947,7 +2947,7 @@
 		(fields_autoplaced yes)
 		(uuid "201f5573-e8c3-46a1-97ca-f34bc2045c03")
 		(property "Reference" "SW3"
-			(at 130.81 45.72 0)
+			(at 133.35 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2955,7 +2955,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 130.81 48.26 0)
+			(at 133.35 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2963,7 +2963,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 130.81 48.26 0)
+			(at 133.35 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2972,7 +2972,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 48.26 0)
+			(at 133.35 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2981,7 +2981,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 130.81 53.34 0)
+			(at 133.35 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4161,7 +4161,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 118.11 53.34 0)
+		(at 119.38 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4170,7 +4170,7 @@
 		(fields_autoplaced yes)
 		(uuid "94452e75-3956-46c3-9b83-af2568a87db1")
 		(property "Reference" "#PWR02"
-			(at 118.11 59.69 0)
+			(at 119.38 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4179,7 +4179,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 118.11 58.42 0)
+			(at 119.38 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4187,7 +4187,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 53.34 0)
+			(at 119.38 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4196,7 +4196,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 53.34 0)
+			(at 119.38 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4205,7 +4205,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 53.34 0)
+			(at 119.38 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4294,7 +4294,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 135.89 53.34 0)
+		(at 138.43 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4303,7 +4303,7 @@
 		(fields_autoplaced yes)
 		(uuid "9c065e57-e51c-46d3-88cc-5c1536116256")
 		(property "Reference" "#PWR03"
-			(at 135.89 59.69 0)
+			(at 138.43 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4312,7 +4312,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 135.89 58.42 0)
+			(at 138.43 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4320,7 +4320,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 53.34 0)
+			(at 138.43 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4329,7 +4329,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 53.34 0)
+			(at 138.43 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4338,7 +4338,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.89 53.34 0)
+			(at 138.43 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4695,7 +4695,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 113.03 53.34 0)
+		(at 114.3 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4704,7 +4704,7 @@
 		(fields_autoplaced yes)
 		(uuid "fbd9512e-5851-427f-8e02-9dc9d0b3969f")
 		(property "Reference" "SW2"
-			(at 113.03 45.72 0)
+			(at 114.3 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4712,7 +4712,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 113.03 48.26 0)
+			(at 114.3 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4720,7 +4720,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 113.03 48.26 0)
+			(at 114.3 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4729,7 +4729,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 48.26 0)
+			(at 114.3 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4738,7 +4738,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 113.03 53.34 0)
+			(at 114.3 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)

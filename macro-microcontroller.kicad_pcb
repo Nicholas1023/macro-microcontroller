@@ -85,9 +85,9 @@
 	(net 5 "LED1")
 	(net 6 "LED2")
 	(net 7 "LED3")
-	(net 8 "S1")
-	(net 9 "S2")
-	(net 10 "S3")
+	(net 8 "SW1")
+	(net 9 "SW2")
+	(net 10 "SW3")
 	(net 11 "+5V")
 	(net 12 "unconnected-(U1-GPIO1{slash}RX-Pad8)")
 	(net 13 "unconnected-(U1-GPIO0{slash}TX-Pad7)")
@@ -309,7 +309,7 @@
 		)
 		(path "/569c12e1-171b-472c-9878-391307607482")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -2.5 -1.566)
@@ -488,7 +488,7 @@
 		)
 		(path "/7877fcf7-ede2-406e-aef2-3d0398744fe5")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -8.89 8.509)
@@ -762,7 +762,7 @@
 			(size 2.432 1.524)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.1)
-			(net 8 "S1")
+			(net 8 "SW1")
 			(pinfunction "GPIO29/ADC3/A3")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -774,7 +774,7 @@
 			(drill 0.889)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 8 "S1")
+			(net 8 "SW1")
 			(pinfunction "GPIO29/ADC3/A3")
 			(pintype "passive")
 			(uuid "51ad3c85-78dd-4bb9-a404-2e87990c7353")
@@ -784,7 +784,7 @@
 			(size 2.432 1.524)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.1)
-			(net 9 "S2")
+			(net 9 "SW2")
 			(pinfunction "GPIO6/SDA")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -796,7 +796,7 @@
 			(drill 0.889)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 9 "S2")
+			(net 9 "SW2")
 			(pinfunction "GPIO6/SDA")
 			(pintype "passive")
 			(uuid "30736e61-731b-454e-814e-f14178bf1ecf")
@@ -806,7 +806,7 @@
 			(size 2.432 1.524)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.1)
-			(net 10 "S3")
+			(net 10 "SW3")
 			(pinfunction "GPIO7/SCL")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -818,7 +818,7 @@
 			(drill 0.889)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 10 "S3")
+			(net 10 "SW3")
 			(pinfunction "GPIO7/SCL")
 			(pintype "passive")
 			(uuid "1c1596fc-c10e-4e2a-b373-1dcf81fc2e42")
@@ -1127,7 +1127,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/70799ec3-e928-4855-be3c-26e060b4bfd4")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 0.62 -0.92)
@@ -1291,7 +1291,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/89730432-afb8-4eab-8342-43a0d689d976")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 0.62 -0.92)
@@ -1456,7 +1456,7 @@
 		)
 		(path "/201f5573-e8c3-46a1-97ca-f34bc2045c03")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -9.525 -1.905)
@@ -1645,7 +1645,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 10 "S3")
+			(net 10 "SW3")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "288ba327-17b7-4697-b530-a2bd1c85933a")
@@ -1894,7 +1894,7 @@
 		)
 		(path "/2c3691e2-be02-462f-8dae-3448fa9010fb")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -2.5 -1.566)
@@ -2072,7 +2072,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/2e20197c-c2ca-4bfa-aa8e-4c0d9cdaf35e")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.38 -1.38)
@@ -2326,7 +2326,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/48e129c7-973b-4b24-945b-eb567084ef34")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.38 -1.38)
@@ -2591,7 +2591,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/e7b1fd9d-a164-4421-b71f-ec01e2ee8f76")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 0.62 -0.92)
@@ -2908,7 +2908,7 @@
 		)
 		(path "/40f38373-1f9f-474e-a7c2-6cc096499b1c")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -2.5 -1.566)
@@ -3239,7 +3239,7 @@
 		)
 		(path "/06c05cc5-f2a0-42ed-b695-46e956201578")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -2.5 -1.566)
@@ -3417,7 +3417,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/1e243c4c-aa14-428d-a042-099bc2cbe6cf")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 0.62 -0.92)
@@ -3582,7 +3582,7 @@
 		)
 		(path "/fbd9512e-5851-427f-8e02-9dc9d0b3969f")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -9.525 -1.905)
@@ -3771,7 +3771,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 9 "S2")
+			(net 9 "SW2")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "5058f5f2-2057-4d0c-9cf1-fe4c8c7248f8")
@@ -3868,7 +3868,7 @@
 		)
 		(path "/442871d1-b308-4e31-92c3-9ab843968a7f")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -9.525 -1.905)
@@ -4057,7 +4057,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 8 "S1")
+			(net 8 "SW1")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "26036adb-32d5-4713-85bb-40e2c710c848")
@@ -4107,7 +4107,7 @@
 			(at -0.06 -7.09 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "58c3af0f-7262-458a-9126-f23d1d4152e5")
+			(uuid "00357e4a-4599-4b69-9488-39da53e49984")
 			(effects
 				(font
 					(size 1 1)
@@ -4118,7 +4118,7 @@
 		(property "Value" "R_Potentiometer"
 			(at -0.06 2.01 90)
 			(layer "F.Fab")
-			(uuid "947a5e41-8e2f-4c3b-8555-333d840e3799")
+			(uuid "14127141-c250-4317-9514-e38600ac0054")
 			(effects
 				(font
 					(size 1 1)
@@ -4130,7 +4130,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7e98f247-74d4-4b29-b1d8-4af93bad505c")
+			(uuid "4ebdcf30-a9b0-49a8-9f3e-a04dd9fcd5ca")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4142,7 +4142,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5833e970-5a5d-4ecb-9ecd-5b5b26e3ff7d")
+			(uuid "4c23fd45-ebfa-40dc-a1c7-5e4259bb66e9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4153,7 +4153,7 @@
 		(property ki_fp_filters "Potentiometer*")
 		(path "/340081ff-a4da-4342-9804-043fb35177a8")
 		(sheetname "/")
-		(sheetfile "macropad.kicad_sch")
+		(sheetfile "macro-microcontroller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 3.55 -5.95)

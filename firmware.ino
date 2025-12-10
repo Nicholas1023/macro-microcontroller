@@ -21,7 +21,7 @@ bool defaultEnable = true;
 
 void setup() {
     Serial.begin(9600);
-    Serial.println("Macro Microcontroller Firmware V1.0.6.\nPress and hold any key until LEDs light up to enable GPIO control or do nothing to run user program.");
+    Serial.println("Macro Microcontroller Firmware V1.0.7.\nPress and hold any key until LEDs light up to enable GPIO control or do nothing to run user program.");
     pinMode(L1, OUTPUT);
     pinMode(L2, OUTPUT);
     pinMode(L3, OUTPUT);
@@ -56,7 +56,7 @@ void loop() {
         keyGPIOControl();
     } else {
         if (defaultEnable == true) {
-            Serial.println("Running user program... You can enable GPIO control at the next loop.");
+            Serial.println("Running user program... Enable GPIO control at the next loop.");
             defaultEnable = false;
         }
         userLoop();
