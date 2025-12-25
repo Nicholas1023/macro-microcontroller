@@ -21,21 +21,22 @@ bool defaultEnable = true;
 
 void setup() {
     Serial.begin(9600);
-    Serial.println("Macro Microcontroller Firmware V1.0.7.\nPress and hold any key until LEDs light up to enable GPIO control or do nothing to run user program.");
+    Serial.println("Macro Microcontroller Firmware Version 1.0.8.");
+    // Set GPIO pins, LEDs and push buttons modes.
+    pinMode(IO2, OUTPUT);
+    pinMode(IO3, OUTPUT);
+    pinMode(IO4, OUTPUT);
     pinMode(L1, OUTPUT);
     pinMode(L2, OUTPUT);
     pinMode(L3, OUTPUT);
     pinMode(SW1, INPUT);
     pinMode(SW2, INPUT);
     pinMode(SW3, INPUT);
-    pinMode(IO2, OUTPUT);
-    pinMode(IO3, OUTPUT);
-    pinMode(IO4, OUTPUT);
-    userPins();
+    Serial.println("Press and hold any key until LEDs light up to enable GPIO control. Do nothing to run user program.");
 }
 
 void loop() {
-    // Statements to enable GPIO control mode if a key is pressed for more than 3 seconds.
+    // Enable GPIO control mode if a key is pressed for more than 3 seconds.
     if ((digitalRead(SW1) == HIGH || digitalRead(SW2) == HIGH || digitalRead(SW3) == HIGH) && GPIOControl == false) {
         Serial.println("Keypress detected. Hold for 3 seconds to enable GPIO control.");
         defaultEnable = true;
@@ -56,6 +57,7 @@ void loop() {
         keyGPIOControl();
     } else {
         if (defaultEnable == true) {
+            userPins();
             Serial.println("Running user program... Enable GPIO control at the next loop.");
             defaultEnable = false;
         }
@@ -63,7 +65,7 @@ void loop() {
     }
 }
 
-// Function for controlling GPIO pins with buttons.
+// Controlling GPIO pins with buttons.
 void keyGPIOControl() {
     if (digitalRead(SW1) == HIGH) {
         while (true) {
@@ -92,7 +94,7 @@ void keyGPIOControl() {
     }
 }
 
-// Functions for users to add their program.
+// Add your custom code below. Do not modify anything above.
 void userPins() {
     // Change pinMode() in here if needed.
 }
